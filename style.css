@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'nohami';
+    src: url(nohemi-font-family-1702246215-0/Nohemi-Regular-BF6438cc4d0e493.ttf);
+}
+.containerr{
+    
+    margin: 0 auto;
+    width: 95%;
+
+    
+}
+.nav-branding{
+   width: 12vw;
+}
+li{
+    color: white;
+    list-style: none;
+    
+}
+a{
+    color: black;
+    font-size: 1.1vw;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+ .navbar{
+    min-height: 70px;
+    display:flex ;
+    justify-content:space-between;
+    align-items: center;
+    border: 2px solid #9233ea;
+   
+} 
+.nav-menu{
+     display: flex; 
+    gap: 40px;
+    
+}
+.signinup{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+#firstbutton{
+    color: white;
+    background-color: #9333EA;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+#firstbutton:hover{
+    color: black;
+    background-color: white;
+    transition: 1000ms;
+    padding: 10px 30px;
+    border: 1px black solid;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: #9333EA;
+}
+.humberger{
+    display: none;
+    cursor: pointer;
+    
+}
+.bar{
+    cursor: pointer;
+    display: none;
+    width: 25px;
+    height: 2.5px;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #9333EA;
+ }    /* NAV MENU CSS END */
+
+
+
+/* HERO SECTION CSS START */
+.rectangle1{
+    position: absolute;
+    left: 51%;
+    top: 18%;
+    width: 20px;
+    height: 20px;
+}
+.rectangle2{
+    position: absolute;
+    left:53%;
+    top: 13%;
+    width: 30px;
+    height: 30px;
+}
+.herosection{
+    display: flex;
+    justify-content: center;
+    
+}
+.firstdiv{
+    margin-top: 100px;
+    width: 60%;
+    
+}
+.firstdiv h2{
+    font-size: 2.5vw;
+    font-family: 'nohami';
+    font-weight: 400;
+    line-height: 110%;
+    width: 50%;
+   margin-bottom: 20px;
+}
+.firstdiv p{
+    font-size: .9rem;
+    width: 400px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 30px;
+}
+.firstdiv :nth-child(3){
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #9333EA;
+    padding: 12px 45px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+}
+
+.firstdiv :nth-child(4){
+    font-size: 17px;
+    font-weight: 500;
+    background-color: white;
+    color: #9333EA;
+    padding: 12px 40px;
+    border-radius: 50px;
+    border: 1px solid #9333EA;
+    
+}
+.play{
+    width: 20px;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.secondiv img{
+    width: 300px;
+    max-width: 100%;    
+    width: 454px;
+    position: relative;
+}
+.borderdootted::before{
+    background-color: #9233ea;
+    content: '';
+    position: absolute;
+    top: -10%; /* Adjust this to control border thickness */
+    left: -10%; /* Adjust this to control border thickness */
+    width: 120%; /* Adjust this to control border thickness */
+    height: 120%; /* Adjust this to control border thickness */
+    border: 2px solid black;
+    transform: rotate(12deg); /* Rotates only the border */
+    box-sizing: border-box;
+}
+
+.happycustomer{
+    margin-top: 60px;
+}
+@media (max-width:855px){
+    .humberger{
+        display: block;
+    }
+    .bar{
+        display: block;
+        
+    }
+    .humberger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .humberger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .humberger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #9233ea;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 10;
+
+    }
+    .nav-item{
+     margin: 16px 0;   
+    }
+    .nav-menu.active{
+      left: 0;  
+    }
+    .nav-branding{
+        margin: 0;
+    }
+    .nav-link{
+        color: aliceblue;
+    }
+    .nav-link:hover{
+        color: whitesmoke;
+    }
+    .signinup{
+        display: none;
+        
+}
