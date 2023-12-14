@@ -1095,7 +1095,8 @@ footer{
     font-weight: 500;
     background-color: white;
     color: #9333EA;
-    width: 200px;
+    width: 190px;
+    padding: 12px 10px;
     border-radius: 50px;
     border: 1px solid #9333EA;   
 }
